@@ -1,0 +1,1070 @@
+Enter TRACE:    TOLAYER2: source: 0, dest: 1
+              costs:0  1  3  7  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  3  7  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  3  7  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   999
+dest 2|  999     3   999
+     3|  999   999     7
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  999  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  999  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1   999   999
+dest 2|  999     1   999
+     3|  999   999   999
+    TOLAYER2: source: 2, dest: 0
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3   999   999
+dest 1|  999     1   999
+     3|  999   999     2
+    TOLAYER2: source: 3, dest: 0
+              costs:7  999  2  0  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 3, dest: 2
+              costs:7  999  2  0  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999   999
+dest 1|  999   999   999
+     2|  999   999     2
+MAIN: rcv event, t=0.094, at 1 src: 0, dest: 1, contents:   0   1   3   7
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  8  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  8  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1   999   999
+dest 2|    4     1   999
+     3|    8   999   999
+MAIN: rcv event, t=0.427, at 1 src: 2, dest: 1, contents:   3   1   0   2
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     4   999
+dest 2|    4     1   999
+     3|    8     3   999
+MAIN: rcv event, t=0.998, at 0 src: 1, dest: 0, contents:   1   0   1 999
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  7  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  7  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  7  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1   999   999
+dest 2|    2     3   999
+     3|  999   999     7
+MAIN: rcv event, t=1.244, at 3 src: 0, dest: 3, contents:   0   1   3   7
+    TOLAYER2: source: 3, dest: 0
+              costs:7  8  2  0  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 3, dest: 2
+              costs:7  8  2  0  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999   999
+dest 1|    8   999   999
+     2|   10   999     2
+MAIN: rcv event, t=1.514, at 2 src: 0, dest: 2, contents:   0   1   3   7
+    TOLAYER2: source: 2, dest: 0
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:3  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3   999   999
+dest 1|    4     1   999
+     3|   10   999     2
+MAIN: rcv event, t=1.685, at 0 src: 2, dest: 0, contents:   3   1   0   2
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   999
+dest 2|    2     3   999
+     3|  999     5     7
+MAIN: rcv event, t=2.171, at 3 src: 2, dest: 3, contents:   3   1   0   2
+    TOLAYER2: source: 3, dest: 0
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 3, dest: 2
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     5
+dest 1|    8   999     3
+     2|   10   999     2
+MAIN: rcv event, t=2.399, at 0 src: 3, dest: 0, contents:   7 999   2   0
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   999
+dest 2|    2     3     9
+     3|  999     5     7
+MAIN: rcv event, t=2.489, at 0 src: 1, dest: 0, contents:   1   0   1   8
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  5  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   999
+dest 2|    2     3     9
+     3|    9     5     7
+MAIN: rcv event, t=2.667, at 2 src: 1, dest: 2, contents:   1   0   1 999
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2   999
+dest 1|    4     1   999
+     3|   10   999     2
+MAIN: rcv event, t=2.823, at 1 src: 0, dest: 1, contents:   0   1   2   7
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     4   999
+dest 2|    3     1   999
+     3|    8     3   999
+MAIN: rcv event, t=3.242, at 1 src: 2, dest: 1, contents:   3   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     4   999
+dest 2|    3     1   999
+     3|    8     3   999
+MAIN: rcv event, t=3.361, at 0 src: 1, dest: 0, contents:   1   0   1   3
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4   999
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=3.780, at 3 src: 0, dest: 3, contents:   0   1   2   7
+    TOLAYER2: source: 3, dest: 0
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 3, dest: 2
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     5
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=3.798, at 2 src: 3, dest: 2, contents:   7 999   2   0
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1   999
+     3|   10   999     2
+MAIN: rcv event, t=3.915, at 0 src: 3, dest: 0, contents:   7   8   2   0
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    15
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=4.774, at 2 src: 1, dest: 2, contents:   1   0   1   8
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1   999
+     3|   10     9     2
+MAIN: rcv event, t=4.967, at 1 src: 0, dest: 1, contents:   0   1   2   5
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     4   999
+dest 2|    3     1   999
+     3|    6     3   999
+MAIN: rcv event, t=5.190, at 0 src: 2, dest: 0, contents:   3   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    15
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=5.464, at 3 src: 2, dest: 3, contents:   3   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     5
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=5.742, at 0 src: 3, dest: 0, contents:   5   3   2   0
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=5.755, at 0 src: 2, dest: 0, contents:   2   1   0   2
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=5.760, at 2 src: 1, dest: 2, contents:   1   0   1   3
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1   999
+     3|   10     4     2
+MAIN: rcv event, t=6.259, at 3 src: 0, dest: 3, contents:   0   1   2   5
+    TOLAYER2: source: 3, dest: 0
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 3, dest: 2
+              costs:5  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     5
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=6.529, at 1 src: 0, dest: 1, contents:   0   1   2   5
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     4   999
+dest 2|    3     1   999
+     3|    6     3   999
+MAIN: rcv event, t=6.771, at 2 src: 0, dest: 2, contents:   0   1   2   7
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1   999
+     3|   10     4     2
+MAIN: rcv event, t=6.947, at 3 src: 0, dest: 3, contents:   0   1   2   5
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     5
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=7.501, at 1 src: 0, dest: 1, contents:   0   1   2   5
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     4   999
+dest 2|    3     1   999
+     3|    6     3   999
+MAIN: rcv event, t=7.607, at 0 src: 1, dest: 0, contents:   1   0   1   3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=7.613, at 3 src: 0, dest: 3, contents:   0   1   2   5
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     5
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=7.650, at 2 src: 3, dest: 2, contents:   7   8   2   0
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1    10
+     3|   10     4     2
+MAIN: rcv event, t=8.631, at 1 src: 2, dest: 1, contents:   2   1   0   2
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    6     3   999
+MAIN: rcv event, t=8.713, at 3 src: 2, dest: 3, contents:   2   1   0   2
+    TOLAYER2: source: 3, dest: 0
+              costs:4  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 3, dest: 2
+              costs:4  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=8.714, at 3 src: 0, dest: 3, contents:   0   1   2   4
+    TOLAYER2: source: 3, dest: 0
+              costs:4  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 3, dest: 2
+              costs:4  3  2  0  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=8.897, at 1 src: 0, dest: 1, contents:   0   1   2   4
+    TOLAYER2: source: 1, dest: 0
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 1, dest: 2
+              costs:1  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=8.958, at 2 src: 0, dest: 2, contents:   0   1   2   5
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     9
+dest 1|    4     1    10
+     3|    8     4     2
+MAIN: rcv event, t=9.381, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=9.529, at 0 src: 3, dest: 0, contents:   5   3   2   0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=9.809, at 2 src: 3, dest: 2, contents:   5   3   2   0
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    8     4     2
+MAIN: rcv event, t=10.058, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=10.212, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=10.448, at 2 src: 0, dest: 2, contents:   0   1   2   5
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    8     4     2
+MAIN: rcv event, t=11.154, at 1 src: 0, dest: 1, contents:   0   1   2   4
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=11.358, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=11.418, at 1 src: 0, dest: 1, contents:   0   1   2   4
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=11.431, at 3 src: 0, dest: 3, contents:   0   1   2   4
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=11.462, at 2 src: 0, dest: 2, contents:   0   1   2   5
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    8     4     2
+MAIN: rcv event, t=11.648, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=12.200, at 2 src: 1, dest: 2, contents:   1   0   1   3
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    8     4     2
+MAIN: rcv event, t=12.548, at 1 src: 0, dest: 1, contents:   0   1   2   4
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=12.598, at 0 src: 1, dest: 0, contents:   1   0   1   3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=13.343, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=13.378, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=13.387, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=13.477, at 2 src: 0, dest: 2, contents:   0   1   2   4
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=14.115, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=14.233, at 3 src: 0, dest: 3, contents:   0   1   2   4
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=14.272, at 2 src: 3, dest: 2, contents:   5   3   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=14.389, at 2 src: 0, dest: 2, contents:   0   1   2   4
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=14.572, at 0 src: 3, dest: 0, contents:   5   3   2   0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=14.751, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=15.252, at 3 src: 0, dest: 3, contents:   0   1   2   4
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=15.549, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=15.794, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=15.915, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=16.141, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=16.308, at 2 src: 1, dest: 2, contents:   1   0   1   3
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=17.253, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=17.317, at 0 src: 1, dest: 0, contents:   1   0   1   3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=17.420, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=17.765, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=17.895, at 2 src: 0, dest: 2, contents:   0   1   2   4
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=18.200, at 0 src: 3, dest: 0, contents:   4   3   2   0
+    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=18.370, at 1 src: 0, dest: 1, contents:   0   1   2   4
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=19.119, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=19.456, at 2 src: 0, dest: 2, contents:   0   1   2   4
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=19.724, at 0 src: 3, dest: 0, contents:   4   3   2   0
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=19.955, at 0 src: 1, dest: 0, contents:   1   0   1   3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=20.194, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=20.229, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=20.233, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=20.940, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=20.947, at 2 src: 3, dest: 2, contents:   5   3   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=21.362, at 2 src: 1, dest: 2, contents:   1   0   1   3
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     7
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=21.701, at 2 src: 3, dest: 2, contents:   4   3   2   0
+    TOLAYER2: source: 2, dest: 0
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 1
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 2, dest: 3
+              costs:2  1  0  2  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=21.776, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=21.935, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=22.046, at 1 src: 2, dest: 1, contents:   2   1   0   2
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    3     1   999
+     3|    5     3   999
+MAIN: rcv event, t=22.056, at 3 src: 0, dest: 3, contents:   0   1   2   4
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=22.675, at 3 src: 2, dest: 3, contents:   2   1   0   2
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=22.835, at 0 src: 2, dest: 0, contents:   2   1   0   2
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=23.595, at 2 src: 3, dest: 2, contents:   4   3   2   0
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=23.818, at 2 src: 1, dest: 2, contents:   1   0   1   3
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=25.773, at 2 src: 0, dest: 2, contents:   0   1   2   4
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=10000.000, at -1    TOLAYER2: source: 0, dest: 1
+              costs:0  4  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  4  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  4  2  4  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   20     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+    TOLAYER2: source: 1, dest: 0
+              costs:3  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 1, dest: 2
+              costs:3  0  1  3  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    3     3   999
+dest 2|    1     1   999
+     3|    3     3   999
+MAIN: rcv event, t=10000.934, at 3 src: 0, dest: 3, contents:   0   4   2   4
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+MAIN: rcv event, t=10001.093, at 1 src: 0, dest: 1, contents:   0   4   2   4
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    3     3   999
+dest 2|    1     1   999
+     3|    3     3   999
+MAIN: rcv event, t=10001.421, at 0 src: 1, dest: 0, contents:   3   0   1   3
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|   20     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+MAIN: rcv event, t=10001.714, at 2 src: 0, dest: 2, contents:   0   4   2   4
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=10002.052, at 2 src: 1, dest: 2, contents:   3   0   1   3
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=20000.000, at 0    TOLAYER2: source: 0, dest: 1
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 2
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+    TOLAYER2: source: 0, dest: 3
+              costs:0  1  2  4  
+    TOLAYER2: scheduling arrival on other side
+                via     
+   D0 |    1     2    3 
+  ----|-----------------
+     1|    1     4    10
+dest 2|    2     3     9
+     3|    4     5     7
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    1     1   999
+     3|    3     3   999
+MAIN: rcv event, t=20000.191, at 2 src: 0, dest: 2, contents:   0   1   2   4
+                via     
+   D2 |    0     1    3 
+  ----|-----------------
+     0|    3     2     6
+dest 1|    4     1     5
+     3|    7     4     2
+MAIN: rcv event, t=20000.992, at 1 src: 0, dest: 1, contents:   0   1   2   4
+                via     
+   D1 |    0     2    3 
+  ----|-----------------
+     0|    1     3   999
+dest 2|    1     1   999
+     3|    3     3   999
+MAIN: rcv event, t=20001.979, at 3 src: 0, dest: 3, contents:   0   1   2   4
+                via     
+   D3 |    0     1    2 
+  ----|-----------------
+     0|    7   999     4
+dest 1|    8   999     3
+     2|    9   999     2
+
+Simulator terminated at t=20001.978516, no packets in medium
