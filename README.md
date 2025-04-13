@@ -15,3 +15,6 @@ gcc distance_vector.c node0.c node1.c node2.c node3.c -o output
 ```
 ./output
 ```
+Team members:
+Gangannagudem Siri - 22110083
+Srijahnavi Chinthalapudi - 22110063
